@@ -1,0 +1,9 @@
+service:
+  name: service_remote
+  identifier: service_remote
+  serviceDefinition:
+    type: Kubernetes
+    spec: {}
+  gitOpsEnabled: false
+  orgIdentifier: default
+  projectIdentifier: Krishika_CD_Samples
