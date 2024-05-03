@@ -1,0 +1,31 @@
+pipeline:
+  name: krishika_test
+  identifier: krishika_test
+  projectIdentifier: Krishika_CD_Samples
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: test
+        identifier: test
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: test
+                  identifier: test
+                  spec:
+                    shell: Bash
+                    executionTarget: {}
+                    source:
+                      type: Inline
+                      spec:
+                        script: |
+                          echo hello
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
